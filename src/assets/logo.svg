@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.543" y1="-1.04" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00b9ff"/>
+      <stop offset="0.181" stop-color="#00a8e8"/>
+      <stop offset="0.345" stop-color="#0099d3"/>
+      <stop offset="0.5" stop-color="#009fdb" stop-opacity="0.071"/>
+      <stop offset="1" stop-color="#005d80"/>
+    </linearGradient>
+    <filter id="Rectangle_1" x="-2.5" y="-2.5" width="1039" height="1039" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_2" x="19.5" y="20.5" width="995" height="995" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_1" x="19.5" y="283.445" width="15" height="15" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_2" x="19.5" y="358.426" width="15" height="15" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_1" x="178.5" y="227.5" width="150.5" height="151" filterUnits="userSpaceOnUse">
+      <feOffset dx="-10" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur-5"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_2" x="370.5" y="185.5" width="235.5" height="235" filterUnits="userSpaceOnUse">
+      <feOffset dx="-10" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur-6"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_3" x="617.5" y="140.5" width="296.5" height="300" filterUnits="userSpaceOnUse">
+      <feOffset dx="-10" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur-7"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-7"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_5" x="132.5" y="371.5" width="243.5" height="329" filterUnits="userSpaceOnUse">
+      <feOffset dx="-10" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur-8"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-8"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_4" x="347.5" y="412.5" width="282.5" height="418" filterUnits="userSpaceOnUse">
+      <feOffset dx="-10" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur-9"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-9"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_3" x="610" y="435" width="320" height="473" filterUnits="userSpaceOnUse">
+      <feOffset dx="-10" input="SourceAlpha"/>
+      <feGaussianBlur result="blur-10"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-10"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-Custom_Size_1">
+      <rect width="1024" height="1024"/>
+    </clipPath>
+  </defs>
+  <g id="Custom_Size_1" data-name="Custom Size – 1" clip-path="url(#clip-Custom_Size_1)">
+    <rect width="1024" height="1024" fill="#fff"/>
+    <path id="Path_3" data-name="Path 3" d="M22,330.425s76.872,15.25,214.938,33.042S508,376.176,508,376.176l274.865-21.6L1002,315.175V55.918L958.934,24.146H63.406s-30.4,12.709-30.4,11.438S22,55.918,22,55.918Z" fill="url(#linear-gradient)"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_1)">
+      <rect id="Rectangle_1-2" data-name="Rectangle 1" width="1024" height="1024" fill="rgba(0,185,255,0.65)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_2)">
+      <rect id="Rectangle_2-2" data-name="Rectangle 2" width="980" height="980" rx="48" transform="translate(22 23)" fill="rgba(0,185,255,0.74)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_1)">
+      <path id="Path_1-2" data-name="Path 1" d="M22,285.945" fill="none"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_2)">
+      <path id="Path_2-2" data-name="Path 2" d="M22,360.926" fill="none"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Ellipse_1)">
+      <ellipse id="Ellipse_1-2" data-name="Ellipse 1" cx="66.5" cy="68" rx="66.5" ry="68" transform="translate(196 230)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Ellipse_2)">
+      <ellipse id="Ellipse_2-2" data-name="Ellipse 2" cx="109" cy="110" rx="109" ry="110" transform="translate(388 188)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Ellipse_3)">
+      <ellipse id="Ellipse_3-2" data-name="Ellipse 3" cx="139.5" cy="142.5" rx="139.5" ry="142.5" transform="translate(635 143)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_5)">
+      <path id="Rectangle_5-2" data-name="Rectangle 5" d="M113,0h0A113,113,0,0,1,226,113V314a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V113A113,113,0,0,1,113,0Z" transform="translate(150 374)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_4)">
+      <path id="Rectangle_4-2" data-name="Rectangle 4" d="M132.5,0h0A132.5,132.5,0,0,1,265,132.5V403a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V132.5A132.5,132.5,0,0,1,132.5,0Z" transform="translate(365 415)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_3)">
+      <path id="Rectangle_3-2" data-name="Rectangle 3" d="M155,0h0A155,155,0,0,1,310,155V473a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V155A155,155,0,0,1,155,0Z" transform="translate(620 435)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

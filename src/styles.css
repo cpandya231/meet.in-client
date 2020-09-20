@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.landingComponent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+}
+
+.landingComponent img {
+  max-width: 20%;
+}
+
+.homeComponent {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: 0 auto;
+  width: 80%;
+
+  align-items: center;
+  grid-gap: 2em;
+}
+
+.user {
+  background-color: rgba(12, 180, 244, 100%);
+  color: white;
+  padding: 2em;
+}
+
+.actionbarComponent {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 80% 20%;
+}
+.chatBoardComponent {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.chatBoardComponent h1 {
+  display: inline;
+}
+
+.chatComponent {
+  bottom: 2em;
+  margin: 0 1em;
+  width: 90%;
+  height: 5%;
+  position: absolute;
+  border-radius: 2em;
+  border: 1px gray solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chatComponent form {
+  position: relative;
+  text-align: center;
+
+  width: 100%;
+}
+
+#chatBox {
+  width: 70%;
+  display: inline-block;
+  border: none;
+  height: 2em;
+}
+
+#chatBox:focus {
+  outline: none;
+  background-color: white;
+}
+
+#submitButton {
+  background-image: url(./assets/send-24px.svg);
+  margin: 0 1em;
+  float: right;
+  border: none;
+  background-color: white;
+  width: 1.5em;
+  height: 2em;
+}
+
+.sidebarComponent {
+  height: 100%;
+  width: 100%;
+
+  color: black;
+  font-weight: bold;
+}
+
+.sidebarComponent ul {
+  padding: 0;
+  margin: 2em auto 0em auto;
+}
+
+.sidebarComponent h2 {
+  text-align: center;
+}
+
+.sidebarComponent li {
+  list-style: none;
+  padding: 1em;
+  border-top: 1px solid dimgray;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.sidebarComponent li:last-child {
+  border-bottom: 1px solid dimgray;
+}
+
+.profileImg {
+  background-color: gray;
+  border-radius: 50%;
+  width: 4em;
+  height: 4em;
+}
+
+.profileName {
+  align-self: center;
+  width: 75%;
+}
