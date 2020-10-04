@@ -14,7 +14,8 @@ function Actionbar(props) {
     <div className="actionbarComponent">
       <ChatBoard
         messages={filteredMessages}
-        currentUser={props.currentUser.currentConnection.name}
+        currentConnection={props.currentUser.currentConnection.name}
+        currentUser={props.currentUser.id}
       />
       <Chat onSubmit={props.onSubmit} />
     </div>

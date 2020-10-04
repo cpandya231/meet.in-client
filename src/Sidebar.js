@@ -1,5 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
+import SidebarHeader from "./SidebarHeader";
 
 function Sidebar(props) {
   let history = useHistory();
@@ -19,7 +20,7 @@ function Sidebar(props) {
   ));
   return (
     <div className="sidebarComponent">
-      <h2>Connections</h2>
+      <SidebarHeader />
       <ul>{connectionList}</ul>
     </div>
   );

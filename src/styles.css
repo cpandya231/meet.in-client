@@ -39,12 +39,14 @@ body {
   grid-template-rows: 80% 20%;
 }
 .chatBoardComponent {
-  margin: 0 auto;
   text-align: center;
 }
 
 .chatBoardComponent h1 {
   display: inline;
+}
+
+.chatBoardComponent ul {
 }
 
 .chatComponent {
@@ -99,11 +101,7 @@ body {
 
 .sidebarComponent ul {
   padding: 0;
-  margin: 2em auto 0em auto;
-}
-
-.sidebarComponent h2 {
-  text-align: center;
+  margin: 0em auto 0em auto;
 }
 
 .sidebarComponent li {
@@ -117,6 +115,68 @@ body {
 
 .sidebarComponent li:last-child {
   border-bottom: 1px solid dimgray;
+}
+
+.searchComponent {
+  background-color: rgba(224, 126, 0, 85%);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.sidebarHeaderComponent {
+}
+
+.searchComponent h2 {
+  width: 85%;
+  max-width: 85%;
+}
+
+.sidebarActionComponent {
+  background-color: rgba(240, 160, 56, 100%);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  padding: 0.5em;
+}
+
+.sidebarActionLinks {
+  width: 33%;
+  text-decoration: none;
+  color: white;
+  opacity: 50%;
+}
+
+.justify-left {
+  text-align: left;
+}
+
+.justify-right {
+  text-align: right;
+}
+
+.justify-center {
+  text-align: center;
+}
+
+#search-box {
+  display: none;
+}
+.active {
+  opacity: 100%;
+}
+
+.currentUser {
+  background-color: #f0a038;
+  float: right;
+}
+
+.foreignUser {
+  background-color: rgba(0, 0, 0, 7%);
+  float: left;
 }
 
 .profileImg {
