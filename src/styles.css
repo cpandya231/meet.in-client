@@ -46,9 +46,6 @@ body {
   display: inline;
 }
 
-.chatBoardComponent ul {
-}
-
 .chatComponent {
   bottom: 2em;
   margin: 0 1em;
@@ -169,14 +166,42 @@ body {
   opacity: 100%;
 }
 
-.currentUser {
-  background-color: #f0a038;
-  float: right;
+#chat {
+  list-style-type: none;
+  padding: 0em;
+  width: 90%;
+  margin: 1em auto;
+  overflow-y: scroll;
 }
 
-.foreignUser {
+#chat li {
+  margin: 0em 0em 2em 2em;
+  /* margin-bottom: 2em; */
+
+  justify-content: space-between;
+  display: flex;
+  max-width: 80%;
+  overflow: hidden;
+}
+
+#chat .message {
+  text-align: left;
+  display: inline-block;
+  max-width: 90%;
+  padding: 1em;
+}
+
+#chat .currentUser {
+  background-color: #f0a038;
+  padding: 1em;
+  text-align: right;
+}
+
+#chat .foreignUser {
   background-color: rgba(0, 0, 0, 7%);
-  float: left;
+  padding: 1em;
+  text-align: left;
+  margin: 0em 0em 2em 0em;
 }
 
 .profileImg {
