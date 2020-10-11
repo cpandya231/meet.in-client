@@ -172,7 +172,7 @@ body {
   width: 100%;
   margin: 1em auto;
   overflow: auto;
-  height: 40em;
+  height: 75vh;
 }
 
 #chat .message {
@@ -197,7 +197,7 @@ body {
 }
 #chat .currentUser {
   background-color: #f0a038;
-  text-align: right;
+  text-align: left;
   display: inline-block;
   padding: 1em;
   margin-right: 1em;
@@ -218,7 +218,7 @@ body {
 .triangle-right {
   width: 0;
   height: 0;
-  border-top: 10px solid transparent;
+  border-top: 0px solid transparent;
   border-bottom: 12px solid transparent;
   border-right: 29px solid rgb(179, 172, 172);
   margin-left: -1em;
@@ -229,7 +229,7 @@ body {
 .triangle-left {
   width: 0;
   height: 0;
-  border-top: 10px solid transparent;
+  border-top: 0px solid transparent;
   border-bottom: 12px solid transparent;
   border-left: 29px solid #f0a038;
   right: 0em;
@@ -248,3 +248,11 @@ body {
   align-self: center;
   width: 75%;
 }
+.msg-date {
+  font-size: 0.7rem;
+  opacity: 50%;
+  text-align: right;
+  margin-top: 0.5em;
+}
+
+

@@ -22,6 +22,7 @@ function ChatBoard(props) {
               : "triangle-right"
           }
         ></div>
+       
       </div>
     </li>
   ));
