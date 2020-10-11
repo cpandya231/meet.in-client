@@ -189,6 +189,11 @@ body {
   position: relative;
   text-align: right;
 }
+
+.message-wrapper-left {
+  position: relative;
+  text-align: left;
+}
 #chat .currentUser {
   background-color: #f0a038;
   text-align: right;
@@ -205,7 +210,8 @@ body {
   background-color: rgb(179, 172, 172);
   display: inline-block;
   text-align: left;
-  margin: 0em 0em 2em 0em;
+
+  padding: 1em;
 }
 
 .triangle-right {
@@ -215,6 +221,7 @@ body {
   border-bottom: 12px solid transparent;
   border-right: 29px solid rgb(179, 172, 172);
   margin-left: -1em;
+  top: 0em;
   position: absolute;
 }
 

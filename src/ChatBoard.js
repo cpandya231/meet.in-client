@@ -4,7 +4,13 @@ import ChatMessage from "./ChatMessage";
 function ChatBoard(props) {
   let messages = props.messages.map((message) => (
     <li key={message.id} className="message">
-      <div className="message-wrapper">
+      <div
+        className={
+          props.currentUser === message.from
+            ? "message-wrapper"
+            : "message-wrapper-left"
+        }
+      >
         <ChatMessage
           message={message}
           currentUser={props.currentUser === message.from}
