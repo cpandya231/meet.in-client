@@ -9,6 +9,7 @@ function Chat(props) {
           id="chatBox"
           name="chatBox"
           placeholder="Type a message"
+          required
         ></input>
         <input type="submit" id="submitButton" value=""></input>
       </form>

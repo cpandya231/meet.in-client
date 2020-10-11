@@ -1,7 +1,11 @@
 import React from "react";
 
 function ChatMessage(props) {
-  return <div className="message">{props.message.text}</div>;
+  return (
+    <div className={props.currentUser ? "currentUser" : "foreignUser"}>
+      <p>{props.message.text}</p>
+    </div>
+  );
 }
 
 export default ChatMessage;

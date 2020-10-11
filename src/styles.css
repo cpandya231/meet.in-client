@@ -172,38 +172,63 @@ body {
   width: 90%;
   margin: 1em auto;
   overflow-y: scroll;
-}
-
-#chat li {
-  margin: 0em 0em 2em 2em;
-  /* margin-bottom: 2em; */
-
-  justify-content: space-between;
-  display: flex;
-  max-width: 80%;
-  overflow: hidden;
+  height: 45em;
 }
 
 #chat .message {
   text-align: left;
+  position: relative;
+  max-width: 100%;
+  width: 17em;
+  margin: 0em 0em 2em 4em;
   display: inline-block;
-  max-width: 90%;
-  padding: 1em;
+  max-width: 80%;
+  border-radius: 0.2em;
 }
-
+.message-wrapper {
+  position: relative;
+  text-align: right;
+}
 #chat .currentUser {
   background-color: #f0a038;
-  padding: 1em;
   text-align: right;
+  display: inline-block;
+  padding: 1em;
+  margin-right: 1em;
+}
+
+.message p {
+  margin: 0;
 }
 
 #chat .foreignUser {
-  background-color: rgba(0, 0, 0, 7%);
-  padding: 1em;
+  background-color: rgb(179, 172, 172);
+  display: inline-block;
   text-align: left;
   margin: 0em 0em 2em 0em;
 }
 
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-right: 29px solid rgb(179, 172, 172);
+  margin-left: -1em;
+  position: absolute;
+}
+
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 29px solid #f0a038;
+  right: 0em;
+  top: 0em;
+  position: absolute;
+  right: 0em;
+}
 .profileImg {
   background-color: gray;
   border-radius: 50%;
