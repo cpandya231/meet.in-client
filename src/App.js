@@ -84,9 +84,12 @@ class App extends Component {
 
     duplicateUsers[this.state.currentUser] = currentUser;
 
-    this.setState({
-      users: duplicateUsers,
-    });
+    this.setState(
+      {
+        users: duplicateUsers,
+      },
+      () => this.scrollBottom()
+    );
     event.target.chatBox.value = "";
   }
 
@@ -107,7 +110,14 @@ class App extends Component {
       this.setState({
         users: duplicateUsers,
       });
+
+      this.scrollBottom();
     });
+  }
+
+  scrollBottom() {
+    let chatMessages = document.getElementById("chat");
+    chatMessages.scrollTop = chatMessages.scrollHeight;
   }
 
   selectUser(roomId) {

@@ -169,20 +169,20 @@ body {
 #chat {
   list-style-type: none;
   padding: 0em;
-  width: 90%;
+  width: 100%;
   margin: 1em auto;
-  overflow-y: scroll;
-  height: 45em;
+  overflow: auto;
+  height: 40em;
 }
 
 #chat .message {
   text-align: left;
   position: relative;
-  max-width: 100%;
-  width: 17em;
-  margin: 0em 0em 2em 4em;
+  width: 100%;
+
+  margin: 0em 0em 2em 0em;
   display: inline-block;
-  max-width: 80%;
+
   border-radius: 0.2em;
 }
 .message-wrapper {
@@ -193,6 +193,7 @@ body {
 .message-wrapper-left {
   position: relative;
   text-align: left;
+  margin-left: 1em;
 }
 #chat .currentUser {
   background-color: #f0a038;
