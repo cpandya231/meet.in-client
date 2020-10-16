@@ -144,9 +144,6 @@ class App extends Component {
 
   componentDidMount() {
     this.listenFromServer();
-  }
-
-  componentWillMount() {
     window.addEventListener("resize", this.handleWindowSizeChange);
   }
 
@@ -158,28 +155,12 @@ class App extends Component {
     this.setState({ width: window.innerWidth });
   };
   render() {
-    let mobileLayout = (
-      <div>
-        <Route path="/chatBoard">
-          <Actionbar
-            onSubmit={this.onSubmit}
-            currentUser={this.state.users[this.state.currentUser]}
-          />
-        </Route>
-        <Route path="/sidebar">
-          <Sidebar
-            onClick={this.selectUser}
-            connections={this.state.users[this.state.currentUser].connections}
-          />
-        </Route>
-      </div>
-    );
     let { width } = this.state;
     let isMobile = width <= 500;
 
     if (isMobile) {
       return (
-        <div className="appComponent">
+        <div className="mobileComponent">
           <Router>
             <Switch>
               <Route path="/chatBoard">
@@ -194,6 +175,7 @@ class App extends Component {
                   connections={
                     this.state.users[this.state.currentUser].connections
                   }
+                  isMobile={isMobile}
                 />
               </Route>
 
@@ -201,6 +183,7 @@ class App extends Component {
                 <HomeComponent
                   selectUser={this.selectAccount}
                   users={this.state.users}
+                  isMobile={isMobile}
                 />
               </Route>
 
@@ -213,10 +196,10 @@ class App extends Component {
       );
     } else {
       return (
-        <div className="appComponent">
+        <div className="desktopComponent">
           <Router>
             <Switch>
-              <Route path="/chatBoard">
+              <Route path="/dashboard">
                 <Actionbar
                   onSubmit={this.onSubmit}
                   currentUser={this.state.users[this.state.currentUser]}
@@ -234,6 +217,7 @@ class App extends Component {
                 <HomeComponent
                   selectUser={this.selectAccount}
                   users={this.state.users}
+                  isMobile={isMobile}
                 />
               </Route>
 

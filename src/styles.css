@@ -255,4 +255,23 @@ body {
   margin-top: 0.5em;
 }
 
+.desktopComponent {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+}
 
+@media only screen and (min-width: 1024px) {
+  .sidebarComponent {
+    width: 30%;
+    border-right: 1px solid black;
+  }
+
+  .actionbarComponent {
+    width: 70%;
+  }
+
+  .chatComponent {
+    width: 60%;
+  }
+}

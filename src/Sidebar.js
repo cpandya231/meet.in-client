@@ -10,7 +10,10 @@ function Sidebar(props) {
       <div
         className="profileName"
         onClick={() => {
-          history.push("/chatBoard");
+          if (props.isMobile) {
+            history.push("/chatBoard");
+          }
+
           props.onClick(connection.id);
         }}
       >

@@ -8,7 +8,12 @@ function HomeComponent(props) {
       key={user.id}
       className="user"
       onClick={() => {
-        history.push("/sidebar");
+        if (props.isMobile) {
+          history.push("/sidebar");
+        } else {
+          history.push("/dashboard");
+        }
+
         props.selectUser(user.id);
       }}
     >
