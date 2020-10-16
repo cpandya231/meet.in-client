@@ -56,6 +56,7 @@ class App extends Component {
           chatMessages: [],
         },
       ],
+      width: window.innerWidth,
     };
     this.onSubmit = this.onSubmit.bind(this);
     this.selectUser = this.selectUser.bind(this);
@@ -145,40 +146,105 @@ class App extends Component {
     this.listenFromServer();
   }
 
+  componentWillMount() {
+    window.addEventListener("resize", this.handleWindowSizeChange);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.handleWindowSizeChange);
+  }
+
+  handleWindowSizeChange = () => {
+    this.setState({ width: window.innerWidth });
+  };
   render() {
-    return (
-      <div className="appComponent">
-        <Router>
-          <Switch>
-            <Route path="/chatBoard">
-              <Actionbar
-                onSubmit={this.onSubmit}
-                currentUser={this.state.users[this.state.currentUser]}
-              />
-            </Route>
-            <Route path="/sidebar">
-              <Sidebar
-                onClick={this.selectUser}
-                connections={
-                  this.state.users[this.state.currentUser].connections
-                }
-              />
-            </Route>
-
-            <Route path="/home">
-              <HomeComponent
-                selectUser={this.selectAccount}
-                users={this.state.users}
-              />
-            </Route>
-
-            <Route path="/">
-              <LandingComponent />
-            </Route>
-          </Switch>
-        </Router>
+    let mobileLayout = (
+      <div>
+        <Route path="/chatBoard">
+          <Actionbar
+            onSubmit={this.onSubmit}
+            currentUser={this.state.users[this.state.currentUser]}
+          />
+        </Route>
+        <Route path="/sidebar">
+          <Sidebar
+            onClick={this.selectUser}
+            connections={this.state.users[this.state.currentUser].connections}
+          />
+        </Route>
       </div>
     );
+    let { width } = this.state;
+    let isMobile = width <= 500;
+
+    if (isMobile) {
+      return (
+        <div className="appComponent">
+          <Router>
+            <Switch>
+              <Route path="/chatBoard">
+                <Actionbar
+                  onSubmit={this.onSubmit}
+                  currentUser={this.state.users[this.state.currentUser]}
+                />
+              </Route>
+              <Route path="/sidebar">
+                <Sidebar
+                  onClick={this.selectUser}
+                  connections={
+                    this.state.users[this.state.currentUser].connections
+                  }
+                />
+              </Route>
+
+              <Route path="/home">
+                <HomeComponent
+                  selectUser={this.selectAccount}
+                  users={this.state.users}
+                />
+              </Route>
+
+              <Route path="/">
+                <LandingComponent />
+              </Route>
+            </Switch>
+          </Router>
+        </div>
+      );
+    } else {
+      return (
+        <div className="appComponent">
+          <Router>
+            <Switch>
+              <Route path="/chatBoard">
+                <Actionbar
+                  onSubmit={this.onSubmit}
+                  currentUser={this.state.users[this.state.currentUser]}
+                />
+
+                <Sidebar
+                  onClick={this.selectUser}
+                  connections={
+                    this.state.users[this.state.currentUser].connections
+                  }
+                />
+              </Route>
+
+              <Route path="/home">
+                <HomeComponent
+                  selectUser={this.selectAccount}
+                  users={this.state.users}
+                />
+              </Route>
+
+              <Route path="/">
+                <LandingComponent />
+              </Route>
+            </Switch>
+          </Router>
+        </div>
+      );
+    }
   }
 }
 
