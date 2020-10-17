@@ -259,12 +259,15 @@ body {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
+  height: 100vh;
 }
 
 @media only screen and (min-width: 1024px) {
   .sidebarComponent {
     width: 30%;
     border-right: 1px solid black;
+    height: 100%;
+    overflow: auto;
   }
 
   .actionbarComponent {
@@ -273,5 +276,10 @@ body {
 
   .chatComponent {
     width: 60%;
+    margin: 0 4em;
+  }
+
+  #chatBox {
+    width: 90%;
   }
 }

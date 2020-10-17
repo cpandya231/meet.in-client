@@ -30,7 +30,12 @@ class App extends Component {
             { name: "Charlie", id: 4 },
             { name: "Dhoni", id: 5 },
             { name: "Deadpool", id: 6 },
-            { name: "Randy", id: 7 },
+            { name: "Randy1", id: 7 },
+            { name: "Randy2", id: 8 },
+            { name: "Randy3", id: 9 },
+            { name: "Randy4", id: 10 },
+            { name: "Randy5", id: 11 },
+            { name: "Randy6", id: 12 },
           ],
 
           chatMessages: [{}],
@@ -137,6 +142,7 @@ class App extends Component {
 
   selectAccount(userId) {
     this.socket.emit("join_room", userId);
+    let currentUser = this.state.users.filter((user) => user.id === userId)[0];
     this.setState({
       currentUser: userId - 1,
     });
@@ -156,7 +162,7 @@ class App extends Component {
   };
   render() {
     let { width } = this.state;
-    let isMobile = width <= 500;
+    let isMobile = width <= 1024;
 
     if (isMobile) {
       return (
